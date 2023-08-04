@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins';
+}
+
+#map {
+  height: 100vh;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 10px;
+  top: 0;
+  height: 100vh;
+  z-index: 10000;
+}
+
+.sidebar {
+  background: rgba(53, 51, 51, 0.639);
+  color: white;
+  height: 90vh;
+  width: 280px;
+  transition: all 0.2s;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar h1 {
+  text-align: center;
+  margin: 10px 0 20px;
+  background: rgba(53, 51, 51, 1);
+  padding: 3px;
+  border-radius: 10px;
+  font-family: 'Indie Flower';
+  letter-spacing: 9px;
+  font-size: 32px;
+}
+
+.sidebar:hover {
+  background: rgba(53, 51, 51, 1);
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field input,
+.field select {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background: black;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* liste alanı */
+ul {
+  overflow: auto;
+  height: 100%;
+  margin-top: 20px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+ul::-webkit-scrollbar {
+  background: black;
+  width: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: rgb(90, 90, 90);
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(69, 69, 69);
+  color: fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+li div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+li div p span {
+  font-weight: bold;
+}
+
+li i {
+  cursor: pointer;
+  font-size: 21px;
+}
+
+li i:hover {
+  color: red;
+}
+
+
+
